@@ -31,7 +31,7 @@ const ContactForm = () => {
 
         try {
             // Send POST request to backend API to add contact
-            const response = await axios.post(`${process.env.REACT_APP_API_URL}/contacts`, contact);
+            await axios.post(`${process.env.REACT_APP_API_URL}/contacts`, contact);
             setMessage('Contact added successfully!');
             setContact({ name: '', email: '', phone: '' }); 
         } catch (error) {
