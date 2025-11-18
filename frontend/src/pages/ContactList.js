@@ -11,7 +11,7 @@ const ContactList= () => {
     useEffect(() => {
         const fetchContacts = async () => {
             try {
-                const response = await axios.get('${process.env.REACT_APP_API_URL}');
+                const response = await axios.get(`${process.env.REACT_APP_API_URL}`);
                 setContacts(response.data);
             } catch (error) {
                 console.error('Error fetching contacts:', error);
