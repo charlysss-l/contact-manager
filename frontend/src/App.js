@@ -4,7 +4,7 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import ContactList from './pages/ContactList';
 import ContactForm from './pages/ContactForm';
-
+import Footer from './components/Footer';
 function App(){
     return (
         <Router>
@@ -15,6 +15,7 @@ function App(){
                 <Route path='/add' element={<ContactForm />} />
                 <Route path='/edit/:id' element={<ContactForm />} />
             </Routes>
+            <Footer />
         </Router>
     );
 }
