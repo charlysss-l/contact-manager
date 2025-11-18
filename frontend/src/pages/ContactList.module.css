@@ -1,0 +1,28 @@
+.contactList{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+
+    table{
+        padding: 20px;
+        
+        thead th{
+            border: 1px solid black;
+            padding: 20px;
+            width: 300px;
+            background-color: black;
+            color: white;
+        }
+        tbody td{
+            text-align: center;
+            border: 1px solid black;
+        }
+         
+    }
+}
