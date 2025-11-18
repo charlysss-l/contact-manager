@@ -6,7 +6,8 @@ footer{
      flex-wrap: wrap;
      color: white;
      padding: 15px;
-     position: relative;
+     position: fixed;
      bottom: 0;
      width: 100%;
+     z-index: 1; 
 }
