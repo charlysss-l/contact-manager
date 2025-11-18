@@ -1,47 +1,54 @@
-.contactSection{
-     display: flex;
+.contactSection {
+    display: flex;
+    justify-content: center;  
+    align-items: center;          
+    padding: 20px;          
+    box-sizing: border-box; 
+   
+}
+
+.contactForm {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-}
-.contactForm{
-    background-color: black;
     padding: 20px;
     border-radius: 10px;
     color: white;
+    border: 1px solid black;
+    width: 100%;
+    max-width: 400px; 
+    box-sizing: border-box;
+}
 
-    h1{
-        color: white;
-        margin-bottom: 20px;
-        background-color: black;
-    }
-    form {
-        display: flex;
-        flex-direction: column;
-        width: 300px;
-        gap: 15px;
-        padding: 10px;
-        background-color: black;
+.contactForm h1 {
+    margin-bottom: 20px;
+}
 
-        input{
-            padding: 10px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-            font-size: 16px;
-        }
-        button{
-            padding: 10px;
-            border-radius: 5px;
-            border: none;
-            background-color: #007BFF;
-            color: white;
-            font-size: 16px;
-            cursor: pointer;
+.contactForm form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+}
 
-            &:hover {
-                background-color: #0056b3;
-            }
-        }
-    }
+.contactForm input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.contactForm button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contactForm button:hover {
+    background-color: #0056b3;
 }
