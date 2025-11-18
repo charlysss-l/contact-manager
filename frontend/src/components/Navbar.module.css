@@ -1,26 +1,53 @@
-.navbar{
+/* Navbar.module.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  flex-wrap: wrap; /* allow wrapping on small screens */
+}
+
+.navbar h1 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(57, 60, 161);
+  margin: 0;
+}
+
+/* Navigation links */
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+/* Links */
+.navbar ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.navbar ul li a:hover {
+  color: rgb(57, 60, 161);
+}
+
+/* Responsive: stack logo on top and links below */
+@media (max-width: 600px) {
+  .navbar {
     display: flex;
-    justify-content: space-between;
-    padding: 20px;
-
-    h1{
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        color: rgb(57, 60, 161);
-    }
-    ul{
-        list-style: none;
-        display:flex ;
-        flex-wrap: wrap;
-        gap: 20px;
-
-        a{
-            text-decoration: none;
-            color: black;
-
-            &:hover {
-                color: rgb(57, 60, 161);
-            }
-        }
-    }
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+  }
+  .navbar ul {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+  }
 }
 
