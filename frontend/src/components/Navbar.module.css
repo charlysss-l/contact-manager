@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  flex-wrap: wrap; /* allow wrapping on small screens */
+  flex-wrap: wrap;
 }
 
 .navbar h1 {
@@ -23,7 +23,7 @@
   flex-wrap: wrap;
 }
 
-/* Links */
+
 .navbar ul li a {
   text-decoration: none;
   color: black;
@@ -34,7 +34,7 @@
   color: rgb(57, 60, 161);
 }
 
-/* Responsive: stack logo on top and links below */
+
 @media (max-width: 600px) {
   .navbar {
     display: flex;
