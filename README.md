@@ -11,8 +11,7 @@ A simple **Contact Manager** web application built with **React** for the fronte
 - [Setup & Installation](#setup--installation)  
 - [Environment Variables](#environment-variables)  
 - [Running the Project](#running-the-project)  
-- [Deployment](#deployment)  
-- [Folder Structure](#folder-structure)  
+- [Deployment](#deployment)   
 - [Contributing](#contributing)  
  
 ---
@@ -76,23 +75,6 @@ Frontend: Deployed on Netlify
 
 Make sure your frontend .env points to the deployed backend URL:
 REACT_APP_API_URL=https://your-backend-url.onrender.com/api
-
-
-## Folder Structure
-contact-manager/
-├─ backend/
-│  ├─ models/
-│  ├─ routes/
-│  ├─ index.js
-├─ frontend/
-│  ├─ src/
-│  │  ├─ components/
-│  │  ├─ pages/
-│  │  ├─ App.js
-│  │  ├─ index.js
-│  ├─ package.json
-├─ README.md
-
 
 ## Contributing
 1. Fork the repository
