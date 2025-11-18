@@ -3,16 +3,18 @@ import axios from 'axios';
 import styles from './ContactForm.module.css';
 
 const ContactForm = () => {
+    // useState - a react hook that allows you to add state to functional components
     const [contact, setContact] = useState({
         name: '',
         email: '',
         phone: ''
     });
 
+    // Loading and message states
     const [loading, setLoading] = useState(false);
     const [message, setMessage] = useState('');
 
-    // Handle input changes
+    // Handle input changes for form fields
     const handleChange = (e) => {
         const { name, value } = e.target;
         setContact(prev => ({
@@ -21,16 +23,17 @@ const ContactForm = () => {
         }));
     };
 
-    // Handle form submission
+    // Handle form submission button click
     const handleSubmit = async (e) => {
         e.preventDefault();
         setLoading(true);
         setMessage('');
 
         try {
+            // Send POST request to backend API to add contact
             const response = await axios.post('http://localhost:5000/api/contacts', contact);
             setMessage('Contact added successfully!');
-            setContact({ name: '', email: '', phone: '' }); // reset form
+            setContact({ name: '', email: '', phone: '' }); 
         } catch (error) {
             console.error(error);
             setMessage('Error adding contact.');
