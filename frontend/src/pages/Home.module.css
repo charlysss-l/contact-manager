@@ -1,0 +1,42 @@
+.homeSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100vh;
+  background-image: url(../assets/home.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #000; 
+  flex-direction: column;
+
+  h1{
+    background-color: transparent;
+    color: white;
+    text-shadow: 1px 1px black;
+    font-size: 50px;
+    text-align: center;
+  }
+  p{ 
+    background-color: transparent;
+    color: rgb(162, 120, 4);
+    text-shadow: 1px 1px black;
+    font-size: 17px;
+    text-align: center;
+  }
+  a{
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgb(57, 60, 161);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+
+    &:hover {
+      background-color: rgb(40, 42, 120);
+    }
+  }
+}
