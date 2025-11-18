@@ -14,8 +14,7 @@ A simple **Contact Manager** web application built with **React** for the fronte
 - [Deployment](#deployment)  
 - [Folder Structure](#folder-structure)  
 - [Contributing](#contributing)  
-- [License](#license)  
-
+ 
 ---
 
 ## Features
@@ -52,7 +51,7 @@ cd frontend
 npm install
 
 
-**Environment Variables**
+## Environment Variables
 Create a .env file in the backend folder:
 MONGO_URL=your_mongodb_connection_string
 PORT=5000
@@ -61,7 +60,7 @@ Create a .env file in the frontend folder:
 REACT_APP_API_URL=https://your-backend-url.onrender.com/api
 
 
-**Running the Project**
+## Running the Project
 Backend (development)
 npm run dev
 
@@ -70,7 +69,7 @@ npm start
 
 Visit http://localhost:3000 in your browser.
 
-**Deployment**
+## Deployment
 Backend: Deployed on Render
 Frontend: Deployed on Netlify
 
@@ -79,7 +78,7 @@ Make sure your frontend .env points to the deployed backend URL:
 REACT_APP_API_URL=https://your-backend-url.onrender.com/api
 
 
-Folder Structure
+## Folder Structure
 contact-manager/
 ├─ backend/
 │  ├─ models/
@@ -95,7 +94,7 @@ contact-manager/
 ├─ README.md
 
 
-**Contributing**
+## Contributing
 1. Fork the repository
 2. Create your feature branch: git checkout -b feature-name
 3. Commit your changes: git commit -m 'Add some feature'
