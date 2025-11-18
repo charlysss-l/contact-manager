@@ -11,7 +11,7 @@ const ContactList= () => {
     useEffect(() => {
         const fetchContacts = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/api/contacts');
+                const response = await axios.get('${process.env.REACT_APP_API_URL}');
                 setContacts(response.data);
             } catch (error) {
                 console.error('Error fetching contacts:', error);
@@ -23,7 +23,7 @@ const ContactList= () => {
     // Delete contact
     const handleDelete = async (id) => {
         try {
-            await axios.delete(`http://localhost:5000/api/contacts/${id}`);
+            await axios.delete(`${process.env.REACT_APP_API_URL}/${id}`);
             // Update state after deletion
             setContacts(prev => prev.filter(contact => contact._id !== id));
         } catch (error) {
@@ -49,7 +49,7 @@ const ContactList= () => {
     // Submit updated contact
     const handleUpdate = async (id) => {
         try {
-            const response = await axios.put(`http://localhost:5000/api/contacts/${id}`, updatedContact);
+            const response = await axios.put(`${process.env.REACT_APP_API_URL}/${id}`, updatedContact);
             setContacts(prev => prev.map(contact => contact._id === id ? response.data : contact));
             setEditingContact(null);
         } catch (error) {
